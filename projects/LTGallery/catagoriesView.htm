@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>LTGallery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+        <link rel="stylesheet" href="css/prettyPhoto.css" />
+        <link rel="stylesheet" href="css/custom-styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/search-style.css" />
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <link rel="stylesheet" href="css/style-ie.css"/>
+        <![endif]--> 
+
+        <link rel="shortcut icon" href="img/favicon.ico" />
+
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/jquery.custom.js"></script>
+        <script type="text/javascript">
+            var message = "Downloading Restricted due to copyright issues!";
+
+            function clickIE4() {
+                if (event.button == 2) {
+                    alert(message);
+                    return false;
+                }
+            }
+
+            function clickNS4(e) {
+                if (document.layers || document.getElementById && !document.all) {
+                    if (e.which == 2 || e.which == 3) {
+                        alert(message);
+                        return false;
+                    }
+                }
+            }
+            if (document.layers) {
+                document.captureEvents(Event.MOUSEDOWN);
+                document.onmousedown = clickNS4;
+            }
+            else if (document.all && !document.getElementById) {
+                document.onmousedown = clickIE4;
+            }
+            document.oncontextmenu = new Function("alert(message);return false")
+
+        </script>
+    </head>
+
+    <body>
+        <div class="container main-container">
+            <div class="row">
+                <div class="span12 gallery">
+                    <h3 class="title-bg "> Category: Food</h3>
+                    <div class="row clearfix">
+                        <ul class="gallery-post-grid holder">
+
+                            <li  class="span2 gallery-item" data-id="id-1" data-type="Food">
+                                <span class="gallery-hover-6col hidden-phone hidden-tablet">
+                                    <span class="gallery-icons">
+                                        <a href="img/Catagories/Food/MG_09092.jpg" class="item-zoom-link lightbox" title="Food" data-rel="prettyPhoto"></a>
+                                        <a href="#" class="item-details-link"></a>
+                                    </span>
+                                </span>
+                                <a href="#"><img src="img/Catagories/Food/MG_09092.jpg" alt="Gallery"></a>
+                                <span class="project-details"><a href="#">Food</a>description</span>
+                            </li>
+
+                            <li class="span2 gallery-item" data-id="id-2" data-type="Food">
+                                <span class="gallery-hover-6col hidden-phone hidden-tablet">
+                                    <span class="gallery-icons">
+                                        <a href="img/Catagories/Food/MG_73871.jpg" class="item-zoom-link lightbox" title="Food" data-rel="prettyPhoto"></a>
+                                        <a href="#" class="item-details-link"></a>
+                                    </span>
+                                </span>
+                                <a href="#"><img src="img/Catagories/Food/MG_73871.jpg" alt="Gallery"></a>
+                                <span class="project-details"><a href="#">Food</a>description</span>
+                            </li>
+
+                            <li class="span2 gallery-item" data-id="id-3" data-type="Food">
+                                <span class="gallery-hover-6col hidden-phone hidden-tablet">
+                                    <span class="gallery-icons">
+                                        <a href="img/Catagories/Food/MG_76701.jpg" class="item-zoom-link lightbox" title="Food" data-rel="prettyPhoto"></a>
+                                        <a href="#" class="item-details-link"></a>
+                                    </span>
+                                </span>
+                                <a href="#"><img src="img/Catagories/Food/MG_76701.jpg" alt="Gallery"></a>
+                                <span class="project-details"><a href="#">Food</a>description</span>
+                            </li>
+
+                            <li class="span2 gallery-item" data-id="id-4" data-type="Food">
+                                <span class="gallery-hover-6col hidden-phone hidden-tablet">
+                                    <span class="gallery-icons">
+                                        <a href="img/Catagories/Food/MG_82341.jpg" class="item-zoom-link lightbox" title="Food" data-rel="prettyPhoto"></a>
+                                        <a href="#" class="item-details-link"></a>
+                                    </span>
+                                </span>
+                                <a href="#"><img src="img/Catagories/Food/MG_82341.jpg" alt="Gallery"></a>
+                                <span class="project-details"><a href="#">Food</a>description</span>
+                            </li>
+
+                            <li class="span2 gallery-item" data-id="id-5" data-type="Food">
+                                <span class="gallery-hover-6col hidden-phone hidden-tablet">
+                                    <span class="gallery-icons">
+                                        <a href="img/Catagories/Food/MG_99611.jpg" class="item-zoom-link lightbox" title="Food" data-rel="prettyPhoto"></a>
+                                        <a href="#" class="item-details-link"></a>
+                                    </span>
+                                </span>
+                                <a href="#"><img src="img/Catagories/Food/MG_99611.jpg" alt="Gallery"></a>
+                                <span class="project-details"><a href="#">Food</a>description</span>
+                            </li>
+
+                            <li class="span2 gallery-item" data-id="id-6" data-type="Miscellaneous">
+                                <span class="gallery-hover-6col hidden-phone hidden-tablet">
+                                    <span class="gallery-icons">
+                                        <a href="img/Catagories/Miscellaneous/MG_4969.jpg" class="item-zoom-link lightbox" title="Miscellaneous" data-rel="prettyPhoto"></a>
+                                        <a href="#" class="item-details-link"></a>
+                                    </span>
+                                </span>
+                                <a href="#"><img src="img/Catagories/Miscellaneous/MG_4969.jpg" alt="Gallery"></a>
+                                <span class="project-details"><a href="#">Miscellaneous</a>description</span>
+                            </li>
+
+                            <li class="span2 gallery-item" data-id="id-7" data-type="Miscellaneous">
+                                <span class="gallery-hover-6col hidden-phone hidden-tablet">
+                                    <span class="gallery-icons">
+                                        <a href="img/Catagories/Miscellaneous/MG_7598.jpg" class="item-zoom-link lightbox" title="Miscellaneous" data-rel="prettyPhoto"></a>
+                                        <a href="#" class="item-details-link"></a>
+                                    </span>
+                                </span>
+                                <a href="#"><img src="img/Catagories/Miscellaneous/MG_7598.jpg" alt="Gallery"></a>
+                                <span class="project-details"><a href="#">Miscellaneous</a>description</span>
+                            </li>
+
+                            <li class="span2 gallery-item" data-id="id-8" data-type="Miscellaneous">
+                                <span class="gallery-hover-6col hidden-phone hidden-tablet">
+                                    <span class="gallery-icons">
+                                        <a href="img/Catagories/Miscellaneous/MG_8281.jpg" class="item-zoom-link lightbox" title="Miscellaneous" data-rel="prettyPhoto"></a>
+                                        <a href="#" class="item-details-link"></a>
+                                    </span>
+                                </span>
+                                <a href="#"><img src="img/Catagories/Miscellaneous/MG_8281.jpg" alt="Gallery"></a>
+                                <span class="project-details"><a href="#">Miscellaneous</a>description</span>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="pagination">
+                        <ul>
+                            <li class="active"><a href="#">Prev</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
+    </body>
+</html>
