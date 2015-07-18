@@ -26,36 +26,36 @@
         <script src="js/jquery.flexslider.js"></script>
         <script src="js/jquery.custom.js"></script>
         <script type="text/javascript">
-            $(document).ready(function() {
+            $(document).ready(function () {
 
-                $("#btn-blog-next").click(function() {
+                $("#btn-blog-next").click(function () {
                     $('#blogCarousel').carousel('next')
                 });
-                $("#btn-blog-prev").click(function() {
+                $("#btn-blog-prev").click(function () {
                     $('#blogCarousel').carousel('prev')
                 });
 
-                $("#btn-client-next").click(function() {
+                $("#btn-client-next").click(function () {
                     $('#clientCarousel').carousel('next')
                 });
-                $("#btn-client-prev").click(function() {
+                $("#btn-client-prev").click(function () {
                     $('#clientCarousel').carousel('prev')
                 });
 
             });
 
-            $(window).load(function() {
+            $(window).load(function () {
 
                 $('.flexslider').flexslider({
                     animation: "slide",
                     slideshow: true,
-                    start: function(slider) {
+                    start: function (slider) {
                         $('body').removeClass('loading');
                     }
                 });
             });
 
-            var message = "Downloading Restricted!";
+            var message = "Downloading Restricted due to copyright issues!";
 
             function clickIE4() {
                 if (event.button == 2) {
@@ -87,7 +87,7 @@
     <body class="home">
         <div class="container">
             <div class="row headline">
-                <div class="span8">
+                <div class="span10 offset1">
                     <div class="flexslider">
                         <ul class="slides">
                             <li><a href="#"><img src="img/Featured/IMG_0302.jpg" alt="slider" /></a></li>
@@ -96,32 +96,56 @@
                             <li><a href="#"><img src="img/Featured/MG_7973.jpg" alt="slider" /></a></li>
                             <li><a href="#"><img src="img/Featured/MG_82341.jpg" alt="slider" /></a></li>
                         </ul>
+                        <div style="
+                             position: absolute;
+                             left: 30%;
+                             right: 25%;
+                             top: 45%;
+                             bottom: 45%;
+                             z-index: 20;
+                             opacity: 1;">
+                            <input type="text" placeholder="Search using tags" style="
+                                   width: 70%;
+                                   min-width: 50px;
+                                   height: 35px;"/>
+                            <button class="btn btn-primary hidden-phone" type="button" style="
+                                    width: 45px;
+                                    height: 45px;
+                                    vertical-align: top"><img src="img/search.png" alt="search" /></button>
+                        </div>
+                        <div class="hidden-phone" style="
+                             height: 20%;
+                             max-height: 300px;
+                             position: absolute;
+                             bottom: 10px;
+                             left: 10px;
+                             right: 65%;
+                             z-index: 10;
+                             opacity: 0.8;
+                             overflow: hidden;">
+                            <h3 style="background-color: black;
+                                font-family: monospace;
+                                text-shadow: none;
+                                color: white;
+                                padding-left: 10px">Featured Images</h3>
+                            <div style="background-color: black;
+                                 padding-left: 10px;
+                                 color: white"><p>This contains a short description of featured images.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="span4">
-                    <h3>Featured Images</h3><br />
-                    <p class="lead">Featured images and description.</p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices.
-                    Vivamus nec lectus sed orci molestie molestie. Etiam mattis neque eu orci rutrum aliquam.
-                </div>
+
             </div>
 
             <div class="row gallery-row">
-                <div class="span12">
-                    <h5 class="title-bg">
-                        <div id="custom-search-input">
-                            <div class="input-group col-md-12">
-                                <input type="text" class="  search-query form-control span11" placeholder="Search using tags" />
-                                <span class="input-group-btn">
-                                    <button class="btn btn-mini btn-inverse hidden-phone" type="button">Search</button>
-                                </span>
-                            </div>
-                        </div>
-                    </h5>
 
-                    <h3 class="title-bg "> Trending</h3>
+                <h3 style="background-color: black;
+                                font-family: monospace;
+                                text-shadow: none;
+                                color: white;
+                                padding-left: 10px"> Trending</h3>
                     <div class="row clearfix">
                         <ul class="gallery-post-grid holder">
                             <li  class="span4 gallery-item" data-id="id-1" data-type="Travel">
@@ -153,7 +177,11 @@
                         </ul>
                     </div>
 
-                    <h3 class="title-bg "> Categories</h3>
+                    <h3 style="background-color: black;
+                                font-family: monospace;
+                                text-shadow: none;
+                                color: white;
+                                padding-left: 10px"> Sub categories</h3>
                     <div class="row clearfix no-margin">
                         <ul class="gallery-post-grid holder">
                             <li  class="span3 gallery-item" data-id="id-1" data-type="Food">
@@ -164,7 +192,7 @@
                                     </span>
                                 </span>
                                 <a href="catagoriesView.htm"><img src="img/Catagories/Food/MG_73871.jpg" alt="Gallery"></a>
-                                <span class="project-details"><a href="catagoriesView.htm">Food</a>Awesome yummy food :P</span>
+                                <span class="project-details"><a href="catagoriesView.htm">Food</a>Awesome, yummy food!</span>
                             </li>
 
                             <li class="span3 gallery-item" data-id="id-2" data-type="Travel">
@@ -175,7 +203,7 @@
                                     </span>
                                 </span>
                                 <a href="catagoriesView.htm"><img src="img/Catagories/Travel/MG_7779.jpg" alt="Gallery"></a>
-                                <span class="project-details"><a href="catagoriesView.htm">Travel</a>Visit Sri Lanka</span>
+                                <span class="project-details"><a href="catagoriesView.htm">Travel</a>Explore Sri Lanka</span>
                             </li>
 
                             <li class="span3 gallery-item" data-id="id-3" data-type="Wildlife">
@@ -186,7 +214,7 @@
                                     </span>
                                 </span>
                                 <a href="catagoriesView.htm"><img src="img/Catagories/Wildlife/IMGP5074.jpg" alt="Gallery"></a>
-                                <span class="project-details"><a href="catagoriesView.htm">Wildlife</a>Explore the fauna and flora of Sri Lanka</span>
+                                <span class="project-details"><a href="catagoriesView.htm">Wildlife</a>Catch the wild side of Sri Lanka!</span>
                             </li>
 
                             <li class="span3 gallery-item" data-id="id-4" data-type="Miscellaneous">
@@ -197,7 +225,7 @@
                                     </span>
                                 </span>
                                 <a href="catagoriesView.htm"><img src="img/Catagories/Miscellaneous/MG_4969.jpg" alt="Gallery"></a>
-                                <span class="project-details"><a href="catagoriesView.htm">Miscellaneous</a>Here and there. </span>
+                                <span class="project-details"><a href="catagoriesView.htm">Miscellaneous</a>Random stuff </span>
                             </li>
                         </ul>
                     </div>
