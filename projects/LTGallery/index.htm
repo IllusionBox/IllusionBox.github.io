@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>LTGallery</title>
+        <!--title>LTGallery</title-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
@@ -85,6 +85,33 @@
     </head>
 
     <body class="home">
+        <div class="header">
+            <div style="background-color: black; height: 32px; position: relative" class="hidden-phone">
+                <a href="http://www.lt.lk/subscribe-to-lt/" class="left-switch" style="color: white; font-family: Tahoma; top: 6px; position: relative">Subscribe To LT</a>
+                <a class="hidden-tablet" style="color: white; font-family: Tahoma; padding-left: 100px; top: 6px; position: relative">LT is a proudly Sri Lankan magazine</a>
+                <a href="mailto:editor@lt.lk" style="color: white; font-family: Tahoma; padding-left: 100px; top: 6px; position: relative">editor@lt.lk</a>
+                <a href="#"><img class="social-micon right" src="img/LTGallery/linkedin.png" style="margin-right: 20px" alt="LinkedIn" /></a>
+                <a href="https://plus.google.com/u/0/+LtLkLifeTimesSL"><img class="social-micon right" src="img/LTGallery/google-plus.png" alt="Google+" /></a>
+                <a href="https://instagram.com/lifetimes_srilanka/"><img class="social-micon right" src="img/LTGallery/instagram.png" alt="Instagram" /></a>
+                <a href="https://twitter.com/Life_TimesSL"><img class="social-micon right" src="img/LTGallery/twitter.png" alt="twitter" /></a>
+                <a href="https://www.facebook.com/LifeTimesSL"><img class="social-micon right" src="img/LTGallery/facebook.png" alt="facebook" /></a>
+            </div>
+            <a href="lt.lk"><img class="logo-switch" src="img/LTGallery/lt-logo-144.jpg" alt="Life Times Magazine" style="padding-left: 20px"/></a>
+            <div class="menu-bar hidden-tablet hidden-phone">
+                <a href="#" class="menu">HOME</a>
+                <a href="#" class="menu">FEATURES</a>
+                <a href="#" class="menu">ABOUT US</a>
+                <a href="#" class="menu">TEAM LT</a>
+                <a href="#" class="menu">LT PRO</a>
+                <a href="#" class="menu">ARCHIVES</a>
+                <a href="#" class="menu">GALLERY</a>
+                <a href="#" class="menu">BLOG</a>
+                <a href="#" class="menu">CONTACT US</a>
+            </div>
+            <div class="menu-bar hidden-desktop">
+                <a href="#"><img src="img/LTGallery/menu.png" alt="Menu" style="opacity: 0.8; top: 5px; left: -8px; position: relative" width="48" height="48"/></a>
+            </div>
+        </div>
         <div class="container">
             <div class="row headline">
                 <div class="span10 offset1">
@@ -108,7 +135,7 @@
                                    width: 70%;
                                    min-width: 50px;
                                    height: 35px;"/>
-                            <button class="btn btn-primary hidden-phone" type="button" style="
+                            <button class="btn btn-navbar hidden-phone" type="button" style="
                                     width: 45px;
                                     height: 45px;
                                     vertical-align: top"><img src="img/search.png" alt="search" /></button>
@@ -121,11 +148,11 @@
                              left: 10px;
                              right: 65%;
                              z-index: 10;
-                             opacity: 0.8;
                              overflow: hidden;">
                             <h3 class="titles">Featured Images</h3>
                             <div style="background-color: black;
                                  padding-left: 10px;
+                                 opacity: 0.8;
                                  color: white"><p>This contains a short description of featured images.</p>
                             </div>
                         </div>
@@ -138,87 +165,87 @@
             <div class="row gallery-row">
 
                 <h3 class="titles"> Trending</h3>
-                    <div class="row clearfix">
-                        <ul class="gallery-post-grid holder">
-                            <li  class="span4 gallery-item" data-id="id-1" data-type="Travel">
-                                <span class="gallery-hover-3col hidden-phone hidden-tablet">
-                                    <span class="gallery-icons">
-                                        <a href="img/Trending/MG_9775.jpg" class="item-zoom-link lightbox" title="Travel" data-rel="prettyPhoto"></a>
-                                    </span>
+                <div class="row clearfix">
+                    <ul class="gallery-post-grid holder">
+                        <li  class="span4 gallery-item" data-id="id-1" data-type="Travel">
+                            <span class="gallery-hover-3col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="img/Trending/MG_9775.jpg" class="item-zoom-link lightbox" title="Travel" data-rel="prettyPhoto"></a>
                                 </span>
-                                <a href="catagoriesView.htm"><img src="img/Trending/MG_9775.jpg" alt="Gallery"></a>
-                            </li>
+                            </span>
+                            <a href="catagoriesView.htm"><img src="img/Trending/MG_9775.jpg" alt="Gallery"></a>
+                        </li>
 
-                            <li class="span4 gallery-item" data-id="id-2" data-type="Wildlife">
-                                <span class="gallery-hover-3col hidden-phone hidden-tablet">
-                                    <span class="gallery-icons">
-                                        <a href="img/Trending/IMGP5114.jpg" class="item-zoom-link lightbox" title="Wildlife" data-rel="prettyPhoto"></a>
-                                    </span>
+                        <li class="span4 gallery-item" data-id="id-2" data-type="Wildlife">
+                            <span class="gallery-hover-3col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="img/Trending/IMGP5114.jpg" class="item-zoom-link lightbox" title="Wildlife" data-rel="prettyPhoto"></a>
                                 </span>
-                                <a href="catagoriesView.htm"><img src="img/Trending/IMGP5114.jpg" alt="Gallery"></a>
-                            </li>
+                            </span>
+                            <a href="catagoriesView.htm"><img src="img/Trending/IMGP5114.jpg" alt="Gallery"></a>
+                        </li>
 
-                            <li class="span4 gallery-item" data-id="id-3" data-type="Food">
-                                <span class="gallery-hover-3col hidden-phone hidden-tablet">
-                                    <span class="gallery-icons">
-                                        <a href="img/Trending/MG_09092.jpg" class="item-zoom-link lightbox" title="Food" data-rel="prettyPhoto"></a>
-                                    </span>
+                        <li class="span4 gallery-item" data-id="id-3" data-type="Food">
+                            <span class="gallery-hover-3col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="img/Trending/MG_09092.jpg" class="item-zoom-link lightbox" title="Food" data-rel="prettyPhoto"></a>
                                 </span>
-                                <a href="catagoriesView.htm"><img src="img/Trending/MG_09092.jpg" alt="Gallery"></a>
-                            </li>  
-                        </ul>
-                    </div>
+                            </span>
+                            <a href="catagoriesView.htm"><img src="img/Trending/MG_09092.jpg" alt="Gallery"></a>
+                        </li>  
+                    </ul>
+                </div>
 
-                    <h3 class="titles"> Sub categories</h3>
-                    <div class="row clearfix no-margin">
-                        <ul class="gallery-post-grid holder">
-                            <li  class="span3 gallery-item" data-id="id-1" data-type="Food">
-                                <span class="gallery-hover-4col hidden-phone hidden-tablet">
-                                    <span class="gallery-icons">
-                                        <a href="img/Catagories/Food/MG_73871.jpg" class="item-zoom-link lightbox" title="Food" data-rel="prettyPhoto"></a>
-                                        <a href="catagoriesView.htm" class="item-details-link"></a>
-                                    </span>
+                <h3 class="titles"> Sub categories</h3>
+                <div class="row clearfix no-margin">
+                    <ul class="gallery-post-grid holder">
+                        <li  class="span3 gallery-item" data-id="id-1" data-type="Food">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="img/Catagories/Food/MG_73871.jpg" class="item-zoom-link lightbox" title="Food" data-rel="prettyPhoto"></a>
+                                    <a href="catagoriesView.htm" class="item-details-link"></a>
                                 </span>
-                                <a href="catagoriesView.htm"><img src="img/Catagories/Food/MG_73871.jpg" alt="Gallery"></a>
-                                <span class="project-details"><a href="catagoriesView.htm">Food</a>Awesome, yummy food!</span>
-                            </li>
+                            </span>
+                            <a href="catagoriesView.htm"><img src="img/Catagories/Food/MG_73871.jpg" alt="Gallery"></a>
+                            <span class="project-details"><a href="catagoriesView.htm">Food</a>Awesome, yummy food!</span>
+                        </li>
 
-                            <li class="span3 gallery-item" data-id="id-2" data-type="Travel">
-                                <span class="gallery-hover-4col hidden-phone hidden-tablet">
-                                    <span class="gallery-icons">
-                                        <a href="img/Catagories/Travel/MG_7779.jpg" class="item-zoom-link lightbox" title="Travel" data-rel="prettyPhoto"></a>
-                                        <a href="catagoriesView.htm" class="item-details-link"></a>
-                                    </span>
+                        <li class="span3 gallery-item" data-id="id-2" data-type="Travel">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="img/Catagories/Travel/MG_7779.jpg" class="item-zoom-link lightbox" title="Travel" data-rel="prettyPhoto"></a>
+                                    <a href="catagoriesView.htm" class="item-details-link"></a>
                                 </span>
-                                <a href="catagoriesView.htm"><img src="img/Catagories/Travel/MG_7779.jpg" alt="Gallery"></a>
-                                <span class="project-details"><a href="catagoriesView.htm">Travel</a>Explore Sri Lanka</span>
-                            </li>
+                            </span>
+                            <a href="catagoriesView.htm"><img src="img/Catagories/Travel/MG_7779.jpg" alt="Gallery"></a>
+                            <span class="project-details"><a href="catagoriesView.htm">Travel</a>Explore Sri Lanka</span>
+                        </li>
 
-                            <li class="span3 gallery-item" data-id="id-3" data-type="Wildlife">
-                                <span class="gallery-hover-4col hidden-phone hidden-tablet">
-                                    <span class="gallery-icons">
-                                        <a href="img/Catagories/Wildlife/IMGP5074.jpg" class="item-zoom-link lightbox" title="Wildlife" data-rel="prettyPhoto"></a>
-                                        <a href="#" class="item-details-link"></a>
-                                    </span>
+                        <li class="span3 gallery-item" data-id="id-3" data-type="Wildlife">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="img/Catagories/Wildlife/IMGP5074.jpg" class="item-zoom-link lightbox" title="Wildlife" data-rel="prettyPhoto"></a>
+                                    <a href="#" class="item-details-link"></a>
                                 </span>
-                                <a href="catagoriesView.htm"><img src="img/Catagories/Wildlife/IMGP5074.jpg" alt="Gallery"></a>
-                                <span class="project-details"><a href="catagoriesView.htm">Wildlife</a>Catch the wild side of Sri Lanka!</span>
-                            </li>
+                            </span>
+                            <a href="catagoriesView.htm"><img src="img/Catagories/Wildlife/IMGP5074.jpg" alt="Gallery"></a>
+                            <span class="project-details"><a href="catagoriesView.htm">Wildlife</a>Catch the wild side of Sri Lanka!</span>
+                        </li>
 
-                            <li class="span3 gallery-item" data-id="id-4" data-type="Miscellaneous">
-                                <span class="gallery-hover-4col hidden-phone hidden-tablet">
-                                    <span class="gallery-icons">
-                                        <a href="img/Catagories/Miscellaneous/MG_4969.jpg" class="item-zoom-link lightbox" title="Miscellaneous" data-rel="prettyPhoto"></a>
-                                        <a href="catagoriesView.htm" class="item-details-link"></a>
-                                    </span>
+                        <li class="span3 gallery-item" data-id="id-4" data-type="Miscellaneous">
+                            <span class="gallery-hover-4col hidden-phone hidden-tablet">
+                                <span class="gallery-icons">
+                                    <a href="img/Catagories/Miscellaneous/MG_4969.jpg" class="item-zoom-link lightbox" title="Miscellaneous" data-rel="prettyPhoto"></a>
+                                    <a href="catagoriesView.htm" class="item-details-link"></a>
                                 </span>
-                                <a href="catagoriesView.htm"><img src="img/Catagories/Miscellaneous/MG_4969.jpg" alt="Gallery"></a>
-                                <span class="project-details"><a href="catagoriesView.htm">Miscellaneous</a>Random stuff </span>
-                            </li>
-                        </ul>
-                    </div>
+                            </span>
+                            <a href="catagoriesView.htm"><img src="img/Catagories/Miscellaneous/MG_4969.jpg" alt="Gallery"></a>
+                            <span class="project-details"><a href="catagoriesView.htm">Miscellaneous</a>Random stuff </span>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
         </div>
         <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
     </body>

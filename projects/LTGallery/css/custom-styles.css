@@ -20,9 +20,66 @@ body {background: #f9f9f9 url(../img/page-bg-1.jpg);}
     opacity: 0.8;
 }
 
+.left-switch{
+    padding-left: 190px;
+}
+
+.social-micon{
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 8px;
+    top: 6px;
+    margin: 2px;
+    padding: 1px;
+    position: relative;
+}
+
+.menu{
+    font-family: Tahoma;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 30px;
+    top: 45%;
+    position: relative;
+}
+
+.menu:hover {
+    color: #333;
+}
+
+.menu-bar{
+    overflow: no-display;
+    margin-left: 190px;
+    height: 100px;
+    position: absolute;
+    top: 32px;
+    right: 10px
+}
+
+.logo-switch{
+    width: 100px;
+    height: 100px;
+}
+
 @media (max-width: 767px) {
     body { padding-right: 0px; padding-left: 0px; }
     .container {margin-right: 20px; margin-left: 20px;}
+    
+  .logo-switch {
+    width: 72px;
+    height: 72px;
+  }
+  
+  .menu-bar{
+      top: 0px;
+      height: 72px;
+  }
+  
+  .left-switch{
+      padding-left: 100px;
+  }
 }
 
 /***** Titles and Headings *****/
